@@ -30,14 +30,17 @@ stopwatch.on('end, function() {
 
 ### Managed
 If you want a managed instance you only need to require the module and use the get function.
-    var StopwatchManager = require('stopwatch');
-    var stopwatch = StopwatchManager.get(1, {seconds: 1, interval: 0});
-    stopwatch.on('tick', function(secondsLeft) {
-      //when one second pass.
-    });
-    stopwatch.on('end, function() {
-       //when the time ends
-    });
+
+```js
+var StopwatchManager = require('stopwatch');
+var stopwatch = StopwatchManager.get(1, {seconds: 1, interval: 0});
+stopwatch.on('tick', function(secondsLeft) {
+  //when one second pass.
+});
+stopwatch.on('end, function() {
+   //when the time ends
+});
+```
 
 ### Examples
 See the test folder. I'll write more example in a examples folder.
