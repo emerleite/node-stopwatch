@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/emerleite/node-stopwatch.png)](http://travis-ci.org/emerleite/node-stopwatch])
+
 Node.js stopwatch
 =================
 This project is a simple way to use a stopwatch. I've done some penny auction/bid sistems with stopwatches and also done a realtime social video visualization. These projects shares a core stopwatch logic and because it becomes hard to maintain I extracted it to this library. I hope it helps somebody else.
