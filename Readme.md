@@ -15,11 +15,12 @@ Instalation
 
 Usuage
 ------
-To create a stopwatch you only need a identifier and you can pass a hash with options with the stopwatch seconds and the interval (in miliseonds) if you want to reduce your stopwatch interval. The default is 1000 miliseconds (or 1 second).
+To create a stopwatch you only need a identifier and you can pass a hash with options with the stopwatch seconds. The default is 10 seconds.
 
 ```js
 var Stopwatch = require('stopwatch').Stopwatch;
-var stopwatch = new Stopwatch(1, { seconds: 60, interval:10 });
+
+var stopwatch = new Stopwatch(1, { seconds: 60 });
 stopwatch.on('tick', function(secondsLeft) {
   //when one second pass.
 });
@@ -33,7 +34,8 @@ If you want a managed instance you only need to require the module and use the g
 
 ```js
 var StopwatchManager = require('stopwatch');
-var stopwatch = StopwatchManager.get(1, {seconds: 1, interval: 0});
+
+var stopwatch = StopwatchManager.get(1, {seconds: 1 });
 stopwatch.on('tick', function(secondsLeft) {
   //when one second pass.
 });
