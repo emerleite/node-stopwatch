@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/emerleite/node-stopwatch.png)](http://travis-ci.org/emerleite/node-stopwatch])
+[![Build Status](https://secure.travis-ci.org/emerleite/node-stopwatch.png)](http://travis-ci.org/emerleite/node-stopwatch)
 
 Node.js stopwatch
 =================
