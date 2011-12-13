@@ -23,7 +23,7 @@ var stopwatch = new Stopwatch(1, { seconds: 60, interval:10 });
 stopwatch.on('tick', function(secondsLeft) {
   //when one second pass.
 });
-stopwatch.on('end, function() {
+stopwatch.on('end', function() {
   //when the time ends
 });
 ```
@@ -37,7 +37,7 @@ var stopwatch = StopwatchManager.get(1, {seconds: 1, interval: 0});
 stopwatch.on('tick', function(secondsLeft) {
   //when one second pass.
 });
-stopwatch.on('end, function() {
+stopwatch.on('end', function() {
    //when the time ends
 });
 ```
