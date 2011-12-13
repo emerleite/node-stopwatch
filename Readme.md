@@ -30,19 +30,25 @@ stopwatch.on('end', function() {
 ```
 
 ### Managed
-If you want a managed instance you only need to require the module and use the get function.
+If you want a managed instance (per identifier) you only need to require the module and use the get function.
 
 ```js
 var StopwatchManager = require('stopwatch');
 
-var stopwatch = StopwatchManager.get(1, {seconds: 1 });
+var stopwatch = StopwatchManager.get(1, {seconds: 10 });
 stopwatch.on('tick', function(secondsLeft) {
   //when one second pass.
 });
 stopwatch.on('end', function() {
    //when the time ends
+   //StopwatchManager also destroys the managed hash reference
 });
+
+//It will get the same instance
+var stopwatchRecovered = StopwatchManager.get(1, {seconds: 10 });
 ```
+
+If you invoke get with the same id, it will not create another instance, but use the same stored instance. When ends, it cleans the managed reference to prevent memory leaks by strong references.
 
 ### Examples
 See the test folder. I'll write more example in a examples folder.
