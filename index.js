@@ -1,1 +1,1 @@
-module.exports = require('./lib/stopwatcher');
+module.exports = require('./lib/stopwatch');
