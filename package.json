@@ -2,7 +2,7 @@
   "author": "Emerson Macedo <emerleite@gmail.com> (http://codificando.com)",
   "name": "stopwatch",
   "description": "A managed stopwatch for Realtime Node.JS Apps",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://github.com/emerleite/node-stopwatch",
   "repository": {
     "type": "git",
