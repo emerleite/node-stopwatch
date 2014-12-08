@@ -1,6 +1,6 @@
 {
   "author": "Emerson Macedo <emerleite@gmail.com> (http://codificando.com)",
-  "name": "stopwatch",
+  "name": "stopwatcher",
   "description": "A managed stopwatch for Realtime Node.JS Apps",
   "version": "0.2.0",
   "homepage": "http://github.com/emerleite/node-stopwatch",
