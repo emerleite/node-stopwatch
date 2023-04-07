@@ -8,16 +8,16 @@
     "type": "git",
     "url": "git://github.com/emerleite/node-stopwatch.git"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha -R spec"
+    "build": "tsc -d -p ."
   },
   "engines": {
     "node": ">=0.8.0"
   },
-  "dependencies": {},
-  "devDependencies": { 
-    "mocha" : "2.0.1",
-    "should" : "4.3.0" 
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3"
   }
 }
